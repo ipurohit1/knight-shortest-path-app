@@ -8,4 +8,4 @@ functions.js (in public->javascripts folder) that has several helper functions r
 
 Implementation of shortest path algorithm 
 
-I adapted the algorithm that computes the minimum number of steps to reach a target cell using a knight to instead create a list of the coordinates that represent the shortest path. I implemented this algorithm in Java in a Java servlet, but I wasn't quite able to get it to work with the server call made by my web application. 
+I adapted the algorithm that computes the minimum number of steps to reach a target cell using a knight to instead create a list of the coordinates that represent the shortest path. I implemented this algorithm in Java in a Java servlet (ShortestPath.java), but I wasn't quite able to get it to work with the server call made by my web application. 
