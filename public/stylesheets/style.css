@@ -1,0 +1,40 @@
+body {
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+/*The container that holds the entire chessboard*/
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 88vh;
+    height: 88vh;
+    background-color: #aaaaaa;
+}
+
+/*A black cell on the chessboard*/
+.grid-element-black {
+    background-color: rgba(0, 0, 0, 1);
+    border: 1px solid rgba(0, 0, 0, 1);
+    height: 11vh;
+    width: 11vh;
+}
+
+/*A white cell on the chessboard*/
+.grid-element-white {
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(255, 255, 255, 1);
+    height: 11vh;
+    width: 11vh;
+}
+
+/*A blue cell on the chessboard*/
+.grid-element-blue {
+    background-color: rgba(0, 191, 255, 1);
+    border: 1px solid rgba(0, 191, 255, 1);
+    height: 11vh;
+    width: 11vh;
+}
+
+

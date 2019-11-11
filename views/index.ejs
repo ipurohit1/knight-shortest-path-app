@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="/javascripts/Functions.js"></script>
+</head>
+<body>
+<h1>Knight Shortest Path Simulation</h1>
+<p>Click any two cells on the board and then press the "Get shortest path" button to display shortest path</p>
+<div class="grid-container">
+
+    <%
+    //For loop that creates the 8x8 board
+    for (var i = 0; i < 8; i++) {
+    for (var j = 0; j < 8; j++) {
+
+        // Sets color to black or white based off index
+        let class_color = ((i + j) % 2 == 0 ? "grid-element-white" : "grid-element-black");
+    %>
+    <div id="<%= i.toString() + ',' + j.toString() %>" onclick="highlight(this.id)" class= <%= class_color %>></div>
+    <%
+    }
+    }
+    %>
+</div>
+<br>
+<br>
+<!-- Makes a call to the server when clicked -->
+<input type="button" onclick="makeServerCall()" value="Get shortest path">
+</body>
+</html>
